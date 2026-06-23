@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
           <a href='#'>Explore Campaigns</a>
         </div>
 
-        <button>Login</button>
+        <button className ='btn'>Login</button>
     </div>
   )
 }

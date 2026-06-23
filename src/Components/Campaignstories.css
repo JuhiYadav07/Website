@@ -1,0 +1,33 @@
+.Campaignsection-heading {
+  display:flex;
+  gap:10px;
+  align-items: center;
+  max-width: 600px;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: #F25C00;
+}
+
+.dot {
+   width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #F25C00;
+}
+
+.campaign-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  /* justify-content: center; */
+  max-width: 800px;
+
+}
+.campaign-content-img {
+  width: 50px;
+  height: 200px;
+  object-fit: cover;
+}
