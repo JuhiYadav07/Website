@@ -59,4 +59,22 @@
   
 }
 
+.orange-200{
+  border:2px solid #F25C00;
+}
+
+.top-icon{
+  font-size: 1.8rem;
+  width: 40%;
+  height: 40px;
+  border-radius:50%;
+  border:2px solid #fbd6be;
+  background-color: #fbd6be;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:2px;
+}
+
+
 

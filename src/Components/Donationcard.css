@@ -1,0 +1,116 @@
+.Donation {
+ border:2px solid black;
+ max-width:550px;
+ padding:2px;
+}
+
+.Raised-Donors{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.Raised, .Donors{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+}
+
+.i-text{
+  font-size:20px;
+  font-weight:700;
+  color:#000000;
+}
+
+.orange-text{
+  color:#F25C00;
+}
+
+.donate-btn {
+  background-color: #F25C00;
+  color: white;
+  border:none;
+  border-radius: 30px;
+  padding:10px 40px;
+}
+
+.Raised-percentage{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:2px 5px;
+}
+
+.prices{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.prices p{
+  border:2px solid grey;
+  padding:10px 25px;
+  border-radius:12px;
+}
+
+.bottom{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding:10px;
+
+}
+
+.Shield, .receipt, .people, .heart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f8d2a6;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.i-icon {
+   width: 16px;
+  height: 16px;
+  background-color: #F25C00;
+  color: white;
+  border-radius:60%;
+  text-decoration:none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 11px;
+}
+
+.separator {
+  width: 2px;
+  height: 60px;
+  background-color: #e5e7eb;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+}
+
+.Raised-content, .Don-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Raised-content p, .Don-content p{
+  margin: 0;
+}
+
+.bottom-icon{
+  font-size: 1.6rem;
+}
+
+

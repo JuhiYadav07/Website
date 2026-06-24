@@ -2,10 +2,13 @@ import React from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import './Footer.css';
 
 const Footer = () =>{
 
   return (
+    <div className= 'Wrapper'>
+
     <div className='footer-container'>
 
       <div className='footer-first'>
@@ -18,6 +21,7 @@ const Footer = () =>{
   <a href="https://linkedin.com" target="_blank"><FaLinkedin /></a>
   <a href="https://twitter.com" target="_blank"><FaTwitter /></a>
   <a href="https://youtube.com" target="_blank"><FaYoutube /></a>
+</div>
 </div>
 
         </div>
@@ -50,13 +54,7 @@ const Footer = () =>{
             </div>
           </div>
 
-           <div className='Location'>
-            <FaEmail />
-            <div>
-              <p>Email Address</p>
-              <a href='#'>info@missionrural.com</a>
-            </div>
-          </div>
+        
 
           <div className='Location'>
             <FaMapMarkerAlt />
@@ -67,10 +65,12 @@ const Footer = () =>{
               <p>Hyderabad, Telangana- 500081</p>
             </div>
           </div>
+          </div>
 
         </div>
       </div>
-    </div>
+    
+
 
     <div className='second-section'>
     <hr />
@@ -82,3 +82,5 @@ const Footer = () =>{
     </div>
   )
 }
+
+export default Footer;
