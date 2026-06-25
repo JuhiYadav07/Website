@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+.campaign-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 40px;
+}
+

@@ -1,7 +1,14 @@
 .Donation {
- border:2px solid black;
- max-width:550px;
- padding:2px;
+  width:380px;
+  flex-shrink: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding:20px;
+  background-color: #ffffff;
+}
+
+.top-icon {
+  font-size: 2rem;
 }
 
 .Raised-Donors{
@@ -18,7 +25,7 @@
 }
 
 .i-text{
-  font-size:20px;
+  font-size:14px;
   font-weight:700;
   color:#000000;
 }
@@ -33,6 +40,10 @@
   border:none;
   border-radius: 30px;
   padding:10px 40px;
+  width: 60%;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .Raised-percentage{
@@ -49,15 +60,25 @@
 }
 
 .prices p{
-  border:2px solid grey;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  border: 2px solid grey;
+  padding: 10px 25px;
+  border-radius: 12px;
+   font-size: 14px !important;
+  font-weight: 700;
+  /* border:2px solid grey;
   padding:10px 25px;
-  border-radius:12px;
+  border-radius:12px; */
 }
 
 .bottom{
   display:flex;
-  justify-content:space-around;
-  align-items:center;
+  justify-content:space-between;
+  align-items: stretch; 
   padding:10px;
 
 }
@@ -70,6 +91,9 @@
   background-color: #f8d2a6;
   border-radius: 4px;
   padding: 8px;
+  width: 80px;        /* fixed width do */
+  min-height: 80px;   /* fixed height do */
+  font-size: 11px; 
 }
 
 .i-icon {
@@ -110,7 +134,13 @@
 }
 
 .bottom-icon{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+}
+
+.selected-price {
+  color: #F25C00;
+  border: 2px solid #F25C00 !important;
+  border-radius: 12px;
 }
 
 

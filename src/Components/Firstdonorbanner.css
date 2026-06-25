@@ -3,11 +3,11 @@
   /* justify-content: space-around; */
   align-items: center;
   gap:15px;
-  background-color: #FFFDD0;
+  background-color:#ffffff;
   max-width: 600px;
   width: 100%;
   padding:10px;
-  margin-left:20%;
+  margin-left:10%;
   margin-top:20px;
 }
 

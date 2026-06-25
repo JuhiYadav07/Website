@@ -1,14 +1,15 @@
 import React from 'react';
 import { MdVerified } from "react-icons/md";
 import { MdReceiptLong } from "react-icons/md";
+import './Imagecarousal.css';
 
-const ImageCarousel = () => {
+const ImageCarousal = () => {
 
   return (
     <div className='campaign-container'>
       
       {/* Campaign Title */}
-      <h1>DharmicSeva for elders</h1>
+      <h1>Dharmic seva for elders</h1>
 
       {/* Verified + Tax Badges */}
       <div className='second-heading'>
@@ -31,8 +32,7 @@ const ImageCarousel = () => {
 
         {/* Main Display Image */}
         <img 
-          src="https://images.unsplash.com/photo-1758549781879-82d764bddc37?w=500" 
-          alt="temple" 
+          src="https://images.unsplash.com/photo-1758346974564-07a164871e7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVtcGxlJTIwZG9uYXRpb258ZW58MHx8MHx8fDA%3D"  className="display-img"
         />
 
         {/* Right Arrow */}
@@ -47,20 +47,21 @@ const ImageCarousel = () => {
       <div className='carousel-thumbnails'>
         <img 
           src="https://media.istockphoto.com/id/1164092444/photo/pilgrim-visit-at-golden-temple-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=AzpEyspss4hjbUrPCmdOTWdQTkgu_3Bg6vNwgTJO-ZI=" 
-          alt="thumbnail 1" 
+          alt="thumbnail 1" className="thumbnail-img"
         />
         <img 
           src="https://images.unsplash.com/photo-1560960138-c463603a0e57?w=700" 
-          alt="thumbnail 2" 
+          alt="thumbnail 2" className="thumbnail-img"
         />
         <img 
           src="https://images.unsplash.com/photo-1777222219334-acf1885f245c?w=700" 
-          alt="thumbnail 3" 
+          alt="thumbnail 3" className="thumbnail-img"
         />
       </div>
+
 
     </div>
   );
 };
 
-export default ImageCarousel;
+export default ImageCarousal;

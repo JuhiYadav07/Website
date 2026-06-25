@@ -49,7 +49,7 @@ const Donationcard = () => {
         <div className='prices'>
           <p className = "i-text ">₹ 100</p>
 
-       <p style={{color: '#F25C00', padding: '10px 25px', border: '2px solid #F25C00', borderRadius: '12px', fontSize: '20px', fontWeight: '700'}}>₹ 200</p>
+       <p className="i-text selected-price" >₹ 200</p>
 
           <p className = "i-text">₹ 300</p>
 

@@ -14,7 +14,12 @@ const Footer = () =>{
       <div className='footer-first'>
         <div className='left-content'>
           <p>Dharmic Seva</p>
-          <p>A Trusted Crowdfuncidng Platform for Rural Development.</p>
+          <p style={{ fontSize: '18px', marginBottom: '0' }}>A Trusted Crowdfunding Platform for Rural</p>
+<p style={{ fontSize: '18px', marginTop: '0' }}>Development.</p>
+
+
+
+
           <div className='social-icons'>
   <a href="https://facebook.com" target="_blank"><FaFacebook /></a>
   <a href="https://instagram.com" target="_blank"><FaInstagram /></a>
@@ -25,6 +30,7 @@ const Footer = () =>{
 </div>
 
         </div>
+       
 
         <div className='middle'>
           <h3>Company</h3>
@@ -39,17 +45,17 @@ const Footer = () =>{
         <h4>Contact</h4>
         <div className='Contact-div'>
           <div className='PhoneNo'>
-            <FaPhone />
+            <FaPhone className='contacticon'/>
             <div>
-              <p>Phone Number</p>
-              <p>+91 7842541919</p>
+              <p style ={{marginBottom: '0'}}>Phone Number</p>
+              <p style ={{marginTop: '0'}}>+91 7842541919</p>
             </div>
           </div>
 
           <div className='Email'>
-            <FaEnvelope />
+            <FaEnvelope className='contacticon'/>
             <div>
-              <p>Email Address</p>
+              <p style ={{marginBottom: '0'}}>Email Address</p>
               <a href='#'>info@missionrural.com</a>
             </div>
           </div>
@@ -57,12 +63,12 @@ const Footer = () =>{
         
 
           <div className='Location'>
-            <FaMapMarkerAlt />
+            <FaMapMarkerAlt className='contacticon'/>
             <div>
-              <p>Location</p>
-              <p>101, Vipras Elite, Door No. :- 1-90/7/b/70/22A</p>
-              <p>Street No:1, Patrika Nagar, HITEC City,</p>
-              <p>Hyderabad, Telangana- 500081</p>
+              <p style={{ marginBottom: '0' }}>Location</p>
+              <p style={{ marginTop: '0', marginBottom: '0' }}>101, Vipras Elite, Door No. :- 1-90/7/b/70/22A</p>
+              <p style={{ marginTop: '0', marginBottom: '0' }}>Street No:1, Patrika Nagar, HITEC City,</p>
+              <p style={{ marginTop: '0', marginBottom: '0' }}>Hyderabad, Telangana- 500081</p>
             </div>
           </div>
           </div>
@@ -74,10 +80,11 @@ const Footer = () =>{
 
     <div className='second-section'>
     <hr />
-    <p>@ 2026 Dharmic Seva. All Rights Reserved.</p>
-    <div className='whatsapp-float'>
-  <FaWhatsapp />
-</div>
+  <p>@ 2026 Dharmic Seva. All Rights Reserved.</p>
+    
+  <FaWhatsapp className='whatsapp-float'size={40}/>
+
+    
     </div>
     </div>
   )

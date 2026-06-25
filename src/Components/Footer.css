@@ -1,4 +1,112 @@
+.Wrapper{
+  background-color: #1F2231;
+  color: white;
+  position: relative;
+}
+
+
+
 .footer-container {
   display:flex;
-  
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 100%;
+  /* border:2px solid red; */
+}
+.middle {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  /* text-align: center; */
+  color: white;
+}
+
+.middle a {
+  text-decoration: none;
+  color: white;
+}
+
+.PhoneNo, .Email{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:15px;
+  /* border:2px solid black; */
+}
+
+.Location{
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap:15px;
+  /* border:2px solid black; */
+}
+
+.social-icons a {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;  /* yeh add karo */
+  gap: 8px;
+}
+
+.social-icons a:nth-child(1) { background-color: #1877F2; }
+.social-icons a:nth-child(2) { background-color: #E4405F; } 
+.social-icons a:nth-child(3) { background-color: #0A66C2; } 
+.social-icons a:nth-child(4) { background-color: #1DA1F2; }
+.social-icons a:nth-child(5) { background-color: #FF0000; } 
+
+
+.contacticon {
+  font-size: 20px;
+  color: white; 
+  border-radius:50%;
+  background-color:#F36811;
+  /* height: ; */
+  /* width:40px; */
+  padding:10px;
+  margin-top:12px;
+}
+
+.Contact-div {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap:10px;
+}
+
+.second-section p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer-first p {
+  color: white;
+}
+
+.right-section {
+  color: white;
+}
+
+.right-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.whatsapp-float{
+  color: white;
+  border-radius:50%;
+  background-color:#21D764;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }

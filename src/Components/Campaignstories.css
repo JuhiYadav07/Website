@@ -3,6 +3,7 @@
   gap:10px;
   align-items: center;
   max-width: 600px;
+  margin-left: 150px;
 }
 
 .line {
@@ -25,17 +26,29 @@
   /* justify-content: center; */
   max-width: 800px;
 /* box-shadow: 19px 19px 0px white; */
-
+  margin-left:90px ;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
+.campaign-content div {
+  flex: 1;  /* text div bacha hua space le lega */
+}
+
 .campaign-content-img {
-  width: 400px;
+  width: 250px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .campaign-content p{
   margin: 0 10px ;
   /* padding:0; */
-
+  color: black;
+  font-size: 14px;
+  line-height: 1.6;
 }
