@@ -27,7 +27,7 @@
 
 .display-img{
   width:100%;
-  height:400px;
+  height:320px;
   object-fit:cover;
   border-radius:10px;
 
@@ -82,7 +82,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .campaign-container {
     width: 100%;
     box-sizing: border-box;
@@ -105,5 +105,12 @@
 
   .carousel-thumbnails {
     gap: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .campaign-container {
+    flex: 2;
+    min-width: 0;
   }
 }

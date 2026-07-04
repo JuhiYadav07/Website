@@ -25,7 +25,7 @@ const HowItWorks = () => {
       </div>
       </div>
 
-       <div className="arrow">→</div>  
+       <div className="step-arrow">→</div>  
 
 
 
@@ -40,7 +40,7 @@ const HowItWorks = () => {
       </div>
       </div>
 
-       <div className="arrow">→</div>  
+       <div className="step-arrow">→</div>  
 
        <div className="Card3">
       <div className = "HandHold-icon">
@@ -53,7 +53,7 @@ const HowItWorks = () => {
       </div>
       </div>
 
-       <div className="arrow">→</div>  
+       <div className="step-arrow">→</div>  
 
        <div className="Card4">
       <div className = "Chart-icon">

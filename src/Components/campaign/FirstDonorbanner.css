@@ -7,8 +7,8 @@
   max-width: 600px;
   width: 100%;
   padding:10px;
-  margin-left:10%;
-  margin-top:20px;
+  margin-left:20%;
+  margin-top:50px;
 }
 
 
@@ -77,4 +77,45 @@
 }
 
 
+@media (max-width: 480px) {
+  .Maindonor {
+    width:  calc(100% - 40px); 
+    max-width: 100%;
+    margin: 20px 20px;
+    padding: 10px;   
+    box-sizing: border-box;
+  
+  }
 
+  .heart-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  align-self: flex-start;
+  margin-top:35px;   
+}
+
+.share-btn{
+  padding:13px 12px;
+}
+ 
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .Maindonor {
+    max-width: 60%;
+    width: auto;
+    margin-left: 0;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+  .donor-btn {
+    font-size: 13px;
+    padding:10px 20px;
+  }
+
+  .share-btn {
+    font-size: 13px;
+    padding:10px 20px;
+  }
+}

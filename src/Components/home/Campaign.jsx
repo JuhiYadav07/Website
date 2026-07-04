@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import './Campaign.css';
 
 const campaigns = [
-  
   {
     id: 1,
     image: "https://images.unsplash.com/photo-1603483080228-04f2313d9f10?w=500",
@@ -10,7 +9,8 @@ const campaigns = [
     raised: "₹2,40,000",
     total: "₹8,00,000",
     donors: 120,
-    badge: "Animals"
+    badge: "Animals",
+    icon: "❤️"
   },
   {
     id: 2,
@@ -19,7 +19,8 @@ const campaigns = [
     raised: "₹1,80,000",
     total: "₹6,00,000",
     donors: 86,
-    badge: "Education"
+    badge: "Education",
+    icon: "❤️"
   },
   {
     id: 3,
@@ -28,7 +29,8 @@ const campaigns = [
     raised: "₹1,80,000",
     total: "₹6,00,000",
     donors: 64,
-    badge: "Healthcare"
+    badge: "Healthcare",
+    icon: "🩺"
   },
   {
     id: 4,
@@ -37,7 +39,8 @@ const campaigns = [
     raised: "₹120,000",
     total: "₹6,00,000",
     donors: 92,
-    badge: "Livelihood"
+    badge: "Livelihood",
+    icon: "🤝"
   }
 ]
 
@@ -53,8 +56,6 @@ const Campaigns = () => {
   };
 
   return (
-
-    //Learn to write comments --> Best practice//
     <main>
       <div className="campaigns-header">
         <h1>Popular Campaigns You Can Support</h1>
@@ -64,11 +65,11 @@ const Campaigns = () => {
         <button className="scroll-btn" onClick={scrollLeft}>❮</button>
         <div className="cards-container" ref={scrollRef}>
           {campaigns.map((campaign) => (
-            <div  className='Card' key={campaign.id}>
+            <div className='Card' key={campaign.id}>
               <div className="card-image-wrapper">
                 <img src={campaign.image} alt={campaign.title} />
-                <span className="heart-icon">❤️</span>
-                <span className="badge">{campaign.badge}</span>
+                <span className="campaign-heart-icon">{campaign.icon}</span>
+                <span className="campaign-badge">{campaign.badge}</span>
               </div>
               <p>{campaign.title}</p>
               <p><span className="raised-amount">{campaign.raised}</span> raised of {campaign.total}</p>

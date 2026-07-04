@@ -15,7 +15,7 @@ const Footer = () =>{
         <div className='left-content'>
           <p>Dharmic Seva</p>
           <p style={{ fontSize: '18px', marginBottom: '0' }}>A Trusted Crowdfunding Platform for Rural</p>
-<p style={{ fontSize: '18px', marginTop: '0' }}>Development.</p>
+<p style={{ fontSize: '18px', marginTop: '0',  paddingTop: '0' }}>Development.</p>
 
 
 

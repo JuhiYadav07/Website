@@ -1,4 +1,4 @@
-
+import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -35,7 +35,7 @@ function HomePage() {
   );
 }
 
-// Campaign Page
+
 function CampaignPage() {
   return (
     <>
@@ -53,6 +53,7 @@ function CampaignPage() {
     </>
   );
 }
+
 
 function App() {
   return (

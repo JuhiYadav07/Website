@@ -22,10 +22,10 @@ const Trusted = () => {
         <h2>India's Most Trusted Rural Giving Platform</h2>
         <p>Join 25+ Lakhs donors who are creating lasting impact in rural communities.</p>
         <div className='Trust-Btn'>
-          <button>Explore Campaigns</button>
+          <button className='btn-explore'>Explore Campaigns</button>
           <div className='play-icon'>
             <FaPlay color='#FF6B00' />
-            <button>How It Works</button>
+            <button className='btn-play'>How It Works</button>
           </div>
         </div>
       </div>

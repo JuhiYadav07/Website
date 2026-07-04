@@ -1,17 +1,23 @@
 import React from "react";
-import { FaHeart, FaRegHeart, FaUsers } from "react-icons/fa";
-import { FaShieldAlt } from "react-icons/fa";
+import { FaHeart, FaRegHeart, FaUsers, FaShieldAlt } from "react-icons/fa";
 import { MdReceiptLong, MdPeople } from "react-icons/md";
 import "./Donationcard.css";
 
 const Donationcard = () => {
+  const predefinedAmounts = [100, 200, 300];
+  const raisedAmount = 0;
+  const goalAmount = 100000;
+  const donorCount = 0;
+  const selectedAmount = 200;
+  const progressPercent = Math.round((raisedAmount / goalAmount) * 100);
+
   return (
     <div className="Donation">
       <div className="Raised-Donors">
         <div className="Raised">
           <FaHeart className="orange-text top-icon" />
           <div className="Raised-content">
-            <p className="orange-text">₹ 0</p>
+            <p className="orange-text">₹ {raisedAmount.toLocaleString()}</p>
             <p>Raised</p>
           </div>
         </div>
@@ -21,7 +27,7 @@ const Donationcard = () => {
         <div className="Donors">
           <FaUsers className="orange-text top-icon" />
           <div className="Don-content">
-            <p className="orange-text">0</p>
+            <p className="orange-text">{donorCount}</p>
             <p>Donors</p>
           </div>
         </div>
@@ -29,49 +35,47 @@ const Donationcard = () => {
 
       <div className="Raised-percentage">
         <p className="i-text">Raised:</p>
-        <p style={{ color: "#16a34a", fontSize: "20px" }}>
-          0%{" "}
-          <a href="#" className="orange-text i-icon">
+        <p className="progress-summary">
+          {progressPercent}%
+          <a href="#" className="orange-text i-icon" aria-label="More information">
             i
           </a>
         </p>
       </div>
 
-      <div className="progress-bar"></div>
-      <p className="i-text">
-        Goal:<span className="orange-text"> ₹ 1,00,000</span>
-      </p>
-      <hr />
+      <div className="progress-bar">
+        <span style={{ width: `${progressPercent}%` }}></span>
+      </div>
 
-      <div
-        className="Donation-price"
-        style={{ position: "relative", marginTop: "20px" }}
-      >
-        <div
-          style={{
-            color: "#16a34a",
-            position: "absolute",
-            top: "-15px",
-            left: "16%",
-            transform: "translateX(-50%)",
-            fontSize: "12px",
-            whiteSpace: "nowrap",
-          }}
-        >
+      <div className="goal-row">
+        <p className="i-text">
+          Goal: <span className="orange-text">₹ {goalAmount.toLocaleString()}</span>
+        </p>
+      </div>
+
+      <div className="Donation-price">
+        <div className="most-donated">
           <FaRegHeart /> Most Donated
         </div>
 
         <div className="prices">
-          <p className="i-text ">₹ 100</p>
+          {predefinedAmounts.map((amount) => (
+            <button
+              key={amount}
+              type="button"
+              className={`price-pill ${selectedAmount === amount ? "selected-price" : ""}`}
+            >
+              ₹ {amount}
+            </button>
+          ))}
 
-          <p className="i-text selected-price">₹ 200</p>
-
-          <p className="i-text">₹ 300</p>
-
-          <p className="i-text">custom</p>
+          <label className="price-pill custom-price">
+            <span>Custom</span>
+            <input type="number" min="1" readOnly />
+          </label>
         </div>
 
-        <button className="donate-btn">Donate Now ₹ 200</button>
+        <button className="donate-btn">Donate Now ₹ {selectedAmount}</button>
       </div>
 
       <div className="bottom">
