@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  margin-bottom: 30px;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .how-title h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #333;
   margin: 0;
@@ -17,153 +17,215 @@
   color: #FF6B00;
 }
 
-.Steps-Container {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.Card1, .Card2, .Card3, .Card4 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: left;
-  width: 220px;
-  flex: 0 0 220px;
-  min-height: 120px;
-  gap: 12px;
-  background: white;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-}
-
 .Works {
-  padding: 60px 40px;
+  padding: 4rem 5%;
   background: white;
   overflow-x: hidden;
   width: 100%;
   box-sizing: border-box;
 }
 
-.step-icon, .Lock-icon, .HandHold-icon, .Chart-icon {
+.Steps-Container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Card1,
+.Card2,
+.Card3,
+.Card4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  width: 14rem;
+  flex: 0 0 14rem;
+  min-height: 7.5rem;
+  gap: 0.75rem;
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+
+.step-icon,
+.Lock-icon,
+.HandHold-icon,
+.Chart-icon {
   background: #FF6B00;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  min-width: 60px;
-  min-height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
+  min-width: 3.75rem;
+  min-height: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 22px;
-  margin-bottom: 12px;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
 }
 
 .Number {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #FF6B00;
-  margin: 8px 0 4px 0;
+  margin: 0.5rem 0 0.25rem;
   font-weight: bold;
 }
 
-.Card1 h3, .Card2 h3, .Card3 h3, .Card4 h3 {
-  font-size: 15px;
+.Card1 h3,
+.Card2 h3,
+.Card3 h3,
+.Card4 h3 {
+  font-size: 1rem;
   font-weight: 700;
-  margin: 0 0 4px 0;
+  margin: 0 0 0.25rem;
   white-space: nowrap;
 }
 
-.Card1 p, .Card2 p, .Card3 p, .Card4 p {
-  font-size: 12px;
+.Card1 p,
+.Card2 p,
+.Card3 p,
+.Card4 p {
+  font-size: 0.8rem;
   color: #333;
   margin: 0;
   line-height: 1.5;
 }
 
 .step-arrow {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   display: flex;
   align-items: center;
   align-self: center;
 }
 
-/* TABLET */
+/* Laptop */
+@media (max-width: 1024px) {
+  .Works {
+    padding: 3rem 4%;
+  }
+
+  .Steps-Container {
+    gap: 1rem;
+  }
+
+  .Card1,
+  .Card2,
+  .Card3,
+  .Card4 {
+    width: 13rem;
+    flex: 0 0 13rem;
+  }
+}
+
+/* Tablet */
 @media (max-width: 768px) {
+  .how-title {
+    margin-bottom: 2rem;
+  }
 
   .how-title span {
     transform: scaleX(1.8);
     display: inline-block;
   }
 
-  .how-title {
-    margin-bottom: 30px;
-  }
-
   .Steps-Container {
     flex-direction: column;
     align-items: center;
-    padding: 0 16px;
+    padding: 0 5%;
   }
 
   .step-arrow {
     transform: rotate(90deg);
   }
 
-  .Card1, .Card2, .Card3, .Card4 {
-    max-width: 100%;
+  .Card1,
+  .Card2,
+  .Card3,
+  .Card4 {
     width: 80%;
+    max-width: 30rem;
     flex: 0 0 auto;
     min-height: auto;
   }
 
-  .Card1 h3, .Card2 h3, .Card3 h3, .Card4 h3 {
-    font-size: 20px;
+  .Card1 h3,
+  .Card2 h3,
+  .Card3 h3,
+  .Card4 h3 {
+    font-size: 1.25rem;
     white-space: normal;
   }
-  
-  .Card1 p, .Card2 p, .Card3 p, .Card4 p {
-  font-size: 18px; 
-  color: #333;
-  margin: 0;
-  line-height: 1.5;
+
+  .Card1 p,
+  .Card2 p,
+  .Card3 p,
+  .Card4 p {
+    font-size: 1rem;
+  }
 }
 
-}
-
-/* PHONE */
+/* Mobile */
 @media (max-width: 480px) {
   .Works {
-    padding: 40px 16px;
+    padding: 2.5rem 5%;
   }
 
   .Steps-Container {
     padding: 0;
   }
 
-  .Card1, .Card2, .Card3, .Card4 {
+  .Card1,
+  .Card2,
+  .Card3,
+  .Card4 {
     width: 100%;
     max-width: 100%;
     flex: 0 0 auto;
-    min-height: auto;
   }
 
   .how-title {
-    gap: 20px;
+    gap: 1rem;
   }
 
   .how-title h2 {
-    font-size: 19px;
+    font-size: 1.2rem;
   }
 
   .how-title span {
     align-self: flex-start;
-    margin-top: 6px;
+    margin-top: 0.4rem;
+  }
+
+  .step-icon,
+  .Lock-icon,
+  .HandHold-icon,
+  .Chart-icon {
+    width: 3.25rem;
+    height: 3.25rem;
+    min-width: 3.25rem;
+    min-height: 3.25rem;
+    font-size: 1.2rem;
+  }
+
+  .Card1 h3,
+  .Card2 h3,
+  .Card3 h3,
+  .Card4 h3 {
+    font-size: 1rem;
+  }
+
+  .Card1 p,
+  .Card2 p,
+  .Card3 p,
+  .Card4 p {
+    font-size: 0.9rem;
   }
 }

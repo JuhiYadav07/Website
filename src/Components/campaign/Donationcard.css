@@ -1,15 +1,15 @@
 .Donation {
-  width: 380px;
+  width: 35%;
   flex-shrink: 0;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 1rem;
+  padding: 2rem;
   background-color: #ffffff;
-  padding: 16px 16px 8px 16px;  /* bottom padding kam kiya */
+  padding: 1rem 2rem 1rem 2rem  
 }
 
-.top-icon {
-  font-size: 1.5rem;
+.donation-top-icon {
+  font-size:2rem;
 }
 
 .Raised-Donors {
@@ -22,11 +22,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .i-text {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 700;
   color: #000000;
 }
@@ -39,11 +39,11 @@
   background-color: #F25C00;
   color: white;
   border: none;
-  border-radius: 30px;
-  padding: 10px 40px;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
   width: 100%;
-  margin-top: 15px;
-  font-size: 16px;
+  margin-top: 1rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -51,14 +51,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5px;
+  padding: 1rem 0.5rem;
 }
 
 .prices {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 0.5rem;
 }
 
 .price-pill {
@@ -66,29 +66,27 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* gap: 2px; */
   border: 2px solid grey;
-  /* padding: 8px 14px; */
-  border-radius: 10px;
-  font-size: 13px;
+  border-radius: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   white-space: nowrap;
   margin: 0;
   background: white;
   cursor: pointer;
   color: #000;
-  width: 70px;
-  height: 40px;
-  padding: 0;
+  width: 150%;
+  height: 150%;
+  padding: 0.5rem;
   box-sizing: border-box;
 }
 
 .custom-price {
   flex-direction: column;
-  padding: 0;
+  padding: 0.5rem;
   gap: 0;
-  width: 70px;
-  height: 40px;
+  width: 150%;
+  height: 150%;
   justify-content: center;
 }
 
@@ -112,30 +110,30 @@
   align-items: center;
   gap: 4px;
   color: #16a34a;
-  font-size: 11px;
+  font-size: 0.6rem;
   font-weight: 600;
-  margin: 0 0 auto 80px;   /* right-aligned, closer to ₹200 pill */
+  margin: 0 0 auto 4rem;   
   width: fit-content;
 }
 
 .progress-summary {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 1rem;
   color: #16a34a;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0;
 }
 
 .goal-row {
-  margin: 8px 0;
+  margin: 1rem 0;
 }
 
 .progress-bar {
   width: 100%;
-  height: 8px;
+  height: 0.625rem;
   background-color: #e5e7eb;
-  border-radius: 10px;
+  border-radius: 5rem;
   overflow: hidden;
   margin-left: 0;
   margin-right: auto;
@@ -150,27 +148,27 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 8px;
-  margin-top: 10px;
+  /* padding: 0.9rem; */
+  margin-top: 0.5rem;
 }
 
 .Shield, .receipt, .people, .heart {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:3px;
+  gap:0.6rem;
   text-align: center;
   background-color: #f8d2a6;
-  border-radius: 4px;
-  padding: 6px;
-  /* width: 70px; */
-  min-height: 65px;
-  font-size: 11px;
+  border-radius: 0.2rem;
+  padding: 0.8rem 0.2rem;
+  min-height: 1rem;
+  font-size: 0.7rem;
+  width:150%;
 }
 
 .i-icon {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   background-color: #F25C00;
   color: white;
   border-radius: 60%;
@@ -178,12 +176,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: 0.8rem;
 }
 
 .separator {
-  width: 2px;
-  height: 60px;
+  width: 1%;
+  height: 3rem;
   background-color: #e5e7eb;
 }
 
@@ -205,7 +203,7 @@
 @media (max-width: 480px) {
   .Donation {
     width: 100%;
-    max-width: 380px;
+    max-width: 60%;
   }
 }
 
@@ -217,7 +215,7 @@
   }
 
   .bottom p{
-    font-size: 10px;
+    font-size: 0.6rem;
   }
 
   /* .price-pill{

@@ -12,14 +12,14 @@
   align-items: flex-start;
   max-width: 100%;
   /* border:2px solid red; */
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
 }
 .middle {
   display:flex;
   flex-direction: column;
-  gap:10px;
+  gap:1rem;
   /* text-align: center; */
   color: white;
 }
@@ -33,7 +33,7 @@
   display:flex;
   justify-content: flex-start;
   align-items: center;
-  gap:15px;
+  gap:1rem;
   /* border:2px solid black; */
 }
 
@@ -41,7 +41,7 @@
   display:flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap:15px;
+  gap:1rem;
   /* border:2px solid black; */
 }
 
@@ -50,17 +50,17 @@
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 10%;
+  height: 2rem;
   border-radius: 50%;
   color: white;
-  margin-top:10px;
+  margin-top:1rem;
 }
 
 .social-icons {
   display: flex;
   flex-direction: row;  /* yeh add karo */
-  gap: 8px;
+  gap: 0.4rem;
 }
 
 .social-icons a:nth-child(1) { background-color: #1877F2; }
@@ -71,34 +71,34 @@
 
 
 .contacticon {
-  font-size: 20px;
+  font-size: 2rem;
   color: white; 
   border-radius:50%;
   background-color:#F36811;
   /* height: ; */
   /* width:40px; */
-  width: 40px;
-  height: 40px;
-  padding:10px;
-  margin-top:12px;
+  width: 13%;
+  height: 10%;
+  padding:0.8rem;
+  margin-top:1rem;
 }
 
 .Contact-div {
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap:10px;
+  gap:0.9rem;
 }
 
 .second-section p {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
 }
 
 .footer-first p {
   color: white;
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 .right-section {
@@ -115,7 +115,7 @@
   border-radius:50%;
   background-color:#21D764;
   position: fixed;
-  bottom: 20px;
+  bottom: 1.8rem;
   right: 20px;
 }
 
@@ -123,9 +123,9 @@
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
-    gap: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
+    gap: 1.9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     box-sizing: border-box;
   }
 
@@ -142,8 +142,8 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   .footer-container {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 2rem;
+    padding-right: 1.9rem;
     box-sizing: border-box;
     
   }
@@ -154,23 +154,23 @@
   }
 
   .footer-first p:nth-of-type(3) {
-    margin-left: 5px;
+    margin-left: 0.2rem;
   }
 
    .footer-first p:first-of-type {
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
   }
 
   .social-icons {
-    margin-top: 20px;
+    margin-top: 1rem;
   }
 
   
   .middle h3,
   .right-section h4 {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     color: white;
   }
 }

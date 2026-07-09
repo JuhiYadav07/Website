@@ -1,5 +1,5 @@
 main {
-  padding: 40px 60px;
+  padding: 2.5rem 5%;
   background: white;
 }
 
@@ -7,11 +7,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .campaigns-header h1 {
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: 700;
   margin: 0;
   color: #1a1a1a;
@@ -20,7 +20,7 @@ main {
 .view-all {
   color: #FF6B00;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -28,18 +28,18 @@ main {
 .scroll-wrapper {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin: 0 -20px;
+  gap: 0.5rem;
+  margin: 0 -1rem;
 }
 
 .scroll-btn {
   background: white;
-  border: 1px solid #ddd;
+  border: 0.0625rem solid #ddd;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 2.3rem;
+  height: 2.3rem;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -49,12 +49,11 @@ main {
 .cards-container {
   flex: 1;
   display: flex;
-  flex-direction: row;
   overflow-x: auto;
-  gap: 16px;
-  padding: 8px 4px 8px 4px;
+  gap: 1rem;
+  padding: 0.5rem 0.25rem;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
 }
@@ -64,98 +63,98 @@ main {
 }
 
 .Card {
-  min-width: 230px;
-  width: 230px;
+  min-width: 16rem;
+  width: 16rem;
   flex-shrink: 0;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   background: white;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-bottom: 14px;
+  gap: 0.75rem;
+  padding-bottom: 1rem;
   scroll-snap-align: start;
 }
 
 .Card:last-child {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 .card-image-wrapper {
   position: relative;
-  height: 160px;
+  height: 12rem;
   overflow: hidden;
 }
 
 .card-image-wrapper img {
   width: 100%;
-  height: 160px;
+  height: 100%;
   object-fit: cover;
 }
 
 .campaign-badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0.625rem;
+  right: 0.625rem;
   background: #4CAF50;
   color: white;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 12px;
+  padding: 0.25rem 0.65rem;
+  border-radius: 1.25rem;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 
 .campaign-heart-icon {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 16px;
+  top: 0.625rem;
+  left: 0.625rem;
+  font-size: 1rem;
   cursor: pointer;
   background: white;
   border-radius: 50%;
-  padding: 4px 6px;
+  padding: 0.3rem 0.4rem;
   z-index: 1;
 }
 
 .Card p {
   text-align: left;
   margin: 0;
-  padding: 0 12px;
-  font-size: 13px;
+  padding: 0 0.75rem;
+  font-size: 0.85rem;
   color: #1a1a1a;
   font-weight: 600;
   line-height: 1.4;
-  word-break: break-word; 
+  word-break: break-word;
 }
 
 .raised-amount {
   color: #FF6B00;
   font-weight: 700;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .progress-bar {
-  width: calc(100% - 24px);
-  margin: 0 12px;
-  height: 6px;
+  width: calc(100% - 1.5rem);
+  margin: 0 0.75rem;
+  height: 0.4rem;
   background: #eeeeee;
-  border-radius: 4px;
+  border-radius: 0.3rem;
 }
 
 .progress-fill {
   width: 30%;
-  height: 6px;
+  height: 100%;
   background: #FF6B00;
-  border-radius: 4px;
+  border-radius: 0.3rem;
 }
 
 .donors {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 12px;
-  font-size: 12px;
+  padding: 0 0.75rem;
+  font-size: 0.8rem;
   color: #666;
 }
 
@@ -165,11 +164,11 @@ main {
 }
 
 .avatar {
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
   border-radius: 50%;
-  border: 2px solid white;
-  margin-left: -8px;
+  border: 0.125rem solid white;
+  margin-left: -0.5rem;
 }
 
 .donor-avatars img:first-child {
@@ -180,58 +179,89 @@ main {
   background-color: #FF6B00;
   color: white;
   border: none;
-  padding: 10px;
-  border-radius: 8px;
-  width: calc(100% - 24px);
-  margin: 0 12px;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  width: calc(100% - 1.5rem);
+  margin: 0 0.75rem;
+  margin-top: auto;
   font-weight: 600;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.95rem;
 }
 
-/* Tablet - iPad Mini */
-@media (max-width: 769px) {
-  main {
-    padding: 40px 24px;
-  }
+.Card p:first-of-type {
+  max-width: 90%;
+}
 
-  .scroll-wrapper {
-    margin: 0 -10px;
+/* Laptop */
+@media (max-width: 1024px) {
+  main {
+    padding: 2rem 4%;
   }
 
   .Card {
-    min-width: 200px;
-    width: 200px;
+    min-width: 14rem;
+    width: 14rem;
+  }
+
+  .card-image-wrapper {
+    height: 11rem;
   }
 }
 
-
-@media (max-width: 480px) {
+/* Tablet */
+@media (max-width: 768px) {
   main {
-    padding: 24px 12px; 
-  }
-
-  .campaigns-header h1 {
-    font-size: 18px;
-  }
-
-  
-  .scroll-btn {
-    display: none; 
+    padding: 2rem 4%;
   }
 
   .scroll-wrapper {
     margin: 0;
   }
 
- 
-  .Card {
-    min-width: 210px;
-    width: 210px;
+  .campaigns-header h1 {
+    font-size: 1.25rem;
   }
-  
+
+  .Card {
+    min-width: 13rem;
+    width: 13rem;
+  }
+
+  .card-image-wrapper {
+    height: 10rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  main {
+    padding: 1.5rem 5%;
+  }
+
+  .campaigns-header h1 {
+    font-size: 1.1rem;
+  }
+
+  .view-all {
+    font-size: 0.85rem;
+  }
+
+  .scroll-btn {
+    display: none;
+  }
+
+  .Card {
+    min-width: 80%;
+    width: 80%;
+  }
+
+  .card-image-wrapper {
+    height: 11rem;
+  }
+
   .btn-donate {
-    font-size: 13px;
-    padding: 8px;
+    font-size: 0.9rem;
+    padding: 0.7rem;
   }
 }

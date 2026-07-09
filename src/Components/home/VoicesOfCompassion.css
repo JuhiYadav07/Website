@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  padding: 30px 40px;
+  gap: 2.5rem;
+  padding: 3vh 3%;
   background: white;
   overflow-x: hidden;
-
 }
 
 .voices-heading {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #333;
   margin: 0;
@@ -24,58 +23,72 @@
 
 .voices-cards {
   display: flex;
-  gap: 24px;
+  gap: 2%;
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
 }
 
-.V1, .V2, .V3 {
+.V1,
+.V2,
+.V3 {
   background: white;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  max-width: 300px;
+  border-radius: 0.75rem;
+  padding: 2%;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.08);
+  max-width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 16px;
+  gap: 1rem;
   box-sizing: border-box;
 }
 
-.v1-1, .v2-1, .v3-1 {
+.v1-1,
+.v2-1,
+.v3-1 {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
-.v1-1 p, .v2-1 p, .v3-1 p {
-  font-size: 14px;
+.v1-1 p,
+.v2-1 p,
+.v3-1 p {
+  font-size: 0.875rem;
   color: #333;
   line-height: 1.6;
 }
 
-.v1-2, .v2-2, .v3-2 {
+.v1-2,
+.v2-2,
+.v3-2 {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
-.v1-2 img, .v2-2 img, .v3-2 img {
-  width: 40px;
-  height: 40px;
+.v1-2 img,
+.v2-2 img,
+.v3-2 img {
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
 }
 
-.v1-2 h4, .v2-2 h4, .v3-2 h4 {
+.v1-2 h4,
+.v2-2 h4,
+.v3-2 h4 {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
 }
 
-.v1-2 p, .v2-2 p, .v3-2 p {
+.v1-2 p,
+.v2-2 p,
+.v3-2 p {
   margin: 0;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #666;
 }
 
@@ -87,7 +100,7 @@
   }
 
   .voices-heading {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 
   .voices-heading::before,
@@ -95,42 +108,54 @@
     content: '———';
   }
 
-  .V1, .V2, .V3 {
+  .V1,
+  .V2,
+  .V3 {
     max-width: 85%;
     width: 85%;
   }
 
-  .v1-1 p, .v2-1 p, .v3-1 p {
-    font-size: 17px;
+  .v1-1 p,
+  .v2-1 p,
+  .v3-1 p {
+    font-size: 1.0625rem;
   }
 
-  .v1-2 h4, .v2-2 h4, .v3-2 h4 {
-    font-size: 16px;
+  .v1-2 h4,
+  .v2-2 h4,
+  .v3-2 h4 {
+    font-size: 1rem;
   }
 
-  .v1-2 p, .v2-2 p, .v3-2 p {
-    font-size: 14px;
+  .v1-2 p,
+  .v2-2 p,
+  .v3-2 p {
+    font-size: 0.875rem;
   }
 
-  .v1-2 img, .v2-2 img, .v3-2 img {
-    width: 50px;
-    height: 50px;
+  .v1-2 img,
+  .v2-2 img,
+  .v3-2 img {
+    width: 3.125rem;
+    height: 3.125rem;
   }
 }
 
 /* PHONE */
 @media (max-width: 480px) {
   .Voicebox {
-    padding: 40px 16px;
-    gap: 24px;
+    padding: 4vh 4%;
+    gap: 1.5rem;
   }
 
   .voices-heading {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
   }
 
-  .V1, .V2, .V3 {
+  .V1,
+  .V2,
+  .V3 {
     width: 100%;
     max-width: 100%;
   }

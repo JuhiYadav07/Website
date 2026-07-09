@@ -2,26 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 4rem;
+  padding: 4rem 5%;
   background: #ffffff;
   gap: 2rem;
 }
 
-.hero-subtext {
-  text:#1a1a1a;;
-}
-
 .hero-left {
   flex: 1;
-  max-width: 520px;
+  max-width: 32.5rem;
 }
 
 .hero-heading {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 800;
   color: #1a1a1a;
   line-height: 1.3;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .highlight {
@@ -29,16 +25,17 @@
 }
 
 .hero-subtext {
-  font-size: 15px;
+  font-size: 1rem;
   color: #666;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
   line-height: 1.6;
 }
 
 .hero-buttons {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .btn-donate-hero {
@@ -47,9 +44,9 @@
   background: #E65C00;
   color: #fff;
   border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 15px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -61,24 +58,23 @@
 .btn-watch {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.75rem;
   background: transparent;
   border: none;
   cursor: pointer;
   color: #333;
-  font-size: 14px;
 }
 
 .watch-title {
   display: block;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1rem;
   color: #1a1a1a;
 }
 
 .watch-sub {
   display: block;
-  font-size: 11px;
+  font-size: 0.75rem;
   color: #888;
 }
 
@@ -90,18 +86,18 @@
 
 .hero-img {
   width: 100%;
-  max-width: 480px;
-  height: 340px;
+  max-width: 30rem;
+  height: 45vh;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 
 .play-icon-wrapper {
-  width: 36px;
-  height: 36px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background: #ffffff;
-  border: 2px solid #E65C00;
+  border: 0.125rem solid #E65C00;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,49 +105,49 @@
 
 .hero-image-wrapper img {
   width: 100%;
-  height: 400px; /* ya jo bhi fixed height ho */
+  height: 50vh;
   object-fit: cover;
 }
 
 /* Laptop */
 @media (max-width: 1024px) {
   .hero {
-    padding: 40px 2rem;
+    padding: 3rem 4%;
     gap: 1.5rem;
   }
 
   .hero-heading {
-    font-size: 28px;
+    font-size: 2rem;
   }
 
   .hero-img {
-    height: 280px;
+    max-width: 26rem;
+    height: 38vh;
   }
 }
 
-/* Tablet - iPad Mini */
-@media (max-width: 769px) {
+/* Tablet */
+@media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    padding: 30px 1.5rem;
     text-align: center;
-  }
-
-  .hero-heading {
-    font-size: 22px;
-  }
-
-  .hero-subtext {
-    font-size: 14px;
+    padding: 2.5rem 5%;
   }
 
   .hero-left {
     max-width: 100%;
   }
 
+  .hero-heading {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.95rem;
+  }
+
   .hero-buttons {
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   .hero-right {
@@ -160,35 +156,38 @@
   }
 
   .hero-img {
+    width: 100%;
     max-width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: 35vh;
     object-position: top;
   }
-
 }
 
-/* Phone */
+/* Mobile */
 @media (max-width: 480px) {
   .hero {
-    padding: 20px 1rem;
+    padding: 2rem 5%;
   }
 
   .hero-heading {
-    font-size: 20px;
+    font-size: 1.5rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.9rem;
   }
 
   .hero-img {
-    height: 200px;
+    height: 30vh;
   }
 
-  .btn-donate-hero {
-    width: 100%;
-    justify-content: center;
-  }
-
+  .btn-donate-hero,
   .btn-watch {
     width: 100%;
     justify-content: center;
+  }
+
+  .btn-donate-hero {
+    padding: 0.9rem;
   }
 }

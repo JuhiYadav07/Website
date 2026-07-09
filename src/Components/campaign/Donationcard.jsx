@@ -15,7 +15,7 @@ const Donationcard = () => {
     <div className="Donation">
       <div className="Raised-Donors">
         <div className="Raised">
-          <FaHeart className="orange-text top-icon" />
+          <FaHeart className="orange-text donation-top-icon" />
           <div className="Raised-content">
             <p className="orange-text">₹ {raisedAmount.toLocaleString()}</p>
             <p>Raised</p>
@@ -25,7 +25,7 @@ const Donationcard = () => {
         <div className="separator"></div>
 
         <div className="Donors">
-          <FaUsers className="orange-text top-icon" />
+          <FaUsers className="orange-text donation-top-icon" />
           <div className="Don-content">
             <p className="orange-text">{donorCount}</p>
             <p>Donors</p>
